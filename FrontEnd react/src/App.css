@@ -1,0 +1,79 @@
+
+
+
+.marquee-container {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee-logo {
+  width: 100%;
+  height: auto;
+  margin-right: 20px; /* Adjust the spacing between logos */
+  animation: marquee 10s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* coursesHomepage -----Card */
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* ============== */
+
+.my-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.my-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  /* Add any other styles you want for the hover effect */
+}
+
+.my-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 30px; /* Add border-radius for rounded corners */
+  overflow: hidden; /* Ensure rounded corners are applied properly */
+}
+
+.my-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.my-card .btn-primary {
+  background-color: #574caf; /* Change to your preferred button color */
+  color: #fff;
+  border: 1px solid #4CAF50;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.my-card .btn-primary:hover {
+  background-color: #45a049; /* Change to a slightly different shade on hover */
+  border-color: #45a049;
+  color: #fff;
+}
+
+
+
+
+/* ================================= */
+i{
+  background-color: rgba(8, 152, 248, 0.801,0.4);
+}
